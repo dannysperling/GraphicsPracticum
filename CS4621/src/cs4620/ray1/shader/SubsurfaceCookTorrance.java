@@ -4,6 +4,7 @@ import cs4620.ray1.IntersectionRecord;
 import cs4620.ray1.Light;
 import cs4620.ray1.Ray;
 import cs4620.ray1.Scene;
+import cs4620.ray1.Wood;
 import egl.math.Color;
 import egl.math.Colord;
 import egl.math.Vector3d;
@@ -37,9 +38,11 @@ public class SubsurfaceCookTorrance extends Shader {
 	public void setFiberDirection(Vector3d fiberDirection){ this.fiberDirection.set(fiberDirection.normalize()); }
 	
 	//TODO: Change these to be a thing in the XML file
-	protected final Colord fiberColor = new Colord(Color.White);
-	protected final Colord dSubColor = new Colord(new Colord(Color.Brown).div(10));
+	protected final Colord fiberColor = new Colord(Wood.darkColor);
+	protected final Colord dSubColor = new Colord(Wood.darkColor.clone().div(20));
 	protected final double beta = 10;
+	
+	protected final double random_noise = Math.random() * 50 + 225;
 
 	public SubsurfaceCookTorrance() { }
 
@@ -66,9 +69,6 @@ public class SubsurfaceCookTorrance extends Shader {
 
 		//Reset the output color to be zero
 		outIntensity.setZero();
-
-		//To be able to user texture colors
-		Colord dColor = (texture == null) ? diffuseColor : texture.getTexColor(record.texCoords);
 		
 		//Check each light
 		for (Light light : scene.getLights()){
@@ -102,6 +102,8 @@ public class SubsurfaceCookTorrance extends Shader {
 				specTerm /= nDotV * nDotL;
 				
 				//Factor of the intensity
+				Colord dColor = Wood.getPixelColor(record.location.x, record.location.y, 
+												   record.location.z, random_noise);	
 				Vector3d color = dColor.clone().addMultiple(specTerm, specularColor);
 				
 				//Degree of reflection
@@ -117,21 +119,12 @@ public class SubsurfaceCookTorrance extends Shader {
 
 				//Then distance fall-off
 				color.mul(1/Math.pow(r, 2));
-
+				
 				//Add to the color
 				outIntensity.add(color);
 			}
 		}
 	}
-
-	/**
-	 * Schlick approximation of the Fresnel term
-	 */
-	private double getFresnelApproximation(Vector3d halfAngle, Vector3d viewingAngle) {
-		
-		return fNaught + (1 - fNaught)*Math.pow((1 - viewingAngle.dot(halfAngle)), 5);
-	}
-	
 	
 	/**
 	 * Based on the actual Fresnel Equation

@@ -78,6 +78,9 @@ public class Sphere extends Surface {
 	  //Set the out record values
 	  outRecord.t = tVal;
 	  outRecord.location.set(position);
+	  
+	  //TODO: Make this more accurate using ray 2
+	  outRecord.objLocaton.set(position);
 	  outRecord.normal.set(normal);
 	  outRecord.texCoords.set(texCoords);
 	  outRecord.surface = this;

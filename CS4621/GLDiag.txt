@@ -1,0 +1,20 @@
+TIME:                         Sun Nov 23 16:57:12 EST 2014
+
+=== Java System Properties ===
+java.version:                 1.7.0_67
+java.runtime.name:            Java(TM) SE Runtime Environment
+java.vm.name:                 Java HotSpot(TM) 64-Bit Server VM
+java.vm.version:              24.65-b04
+os.name:                      Windows 7
+os.version:                   6.1
+
+====== OpenGL Properties =====
+GL_VENDOR:                    NVIDIA Corporation
+GL_VERSION:                   4.4.0
+GL_RENDERER:                  GeForce GT 540M/PCIe/SSE2
+GL_SHADING_LANGUAGE_VERSION:  4.40 NVIDIA via Cg compiler
+
+Program Link Error for Environment material:
+
+Program Link Error for ReflectionMap material:
+

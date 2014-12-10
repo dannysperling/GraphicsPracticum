@@ -14,6 +14,9 @@ public class IntersectionRecord {
 
   /** The location where the intersection occurred. */
   public final Vector3d location = new Vector3d();
+  
+  /** The object-space coordinates of the location. */
+  public final Vector3d objLocaton = new Vector3d();
 
   /** The normal of the surface at the intersection location. */
   public final Vector3d normal = new Vector3d();
@@ -34,6 +37,7 @@ public class IntersectionRecord {
    */
   public void set(IntersectionRecord inRecord) {
     location.set(inRecord.location);
+    objLocaton.set(inRecord.location);
     normal.set(inRecord.normal);
     texCoords.set(inRecord.texCoords);
     surface = inRecord.surface;   

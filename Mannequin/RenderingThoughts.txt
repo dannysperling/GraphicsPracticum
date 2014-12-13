@@ -1,0 +1,17 @@
+Initial Tasks:
+--Implement Cook-Torrence Shading
+--Implement simple fibers
+--Use specular texture mapping
+--Implement anisotropic sub-surface reflection with fibers
+
+Later tasks:
+--Create more accurate fiber generation, randomness
+--Tune all the parameters, a lot
+--Attempt multiple types of wood
+
+Extra tasks:
+--Implement knots in wood
+
+And later, for something completely different:
+--Metal. Research, do it.
+--Brushed Metal Reflectance - Heidrich-Seidel anisotropic distribution

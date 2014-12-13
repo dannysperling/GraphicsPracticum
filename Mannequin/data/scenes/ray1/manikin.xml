@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene>
+  <mesh>
+    <name>elbow.obj</name>
+    <data>
+      <file>data/meshes/mannequin/elbow.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>wrist.obj</name>
+    <data>
+      <file>data/meshes/mannequin/wrist.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>head.obj</name>
+    <data>
+      <file>data/meshes/mannequin/head.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>Plane</name>
+    <data>
+      <generator type="cs4620.mesh.gen.MeshGenPlane"/>
+      <genOptions>
+        <divLatitude>80</divLatitude>
+        <divLongitude>120</divLongitude>
+        <innerRadius>0.25</innerRadius>
+      </genOptions>
+    </data>
+  </mesh>
+  <mesh>
+    <name>torso_bottom.obj</name>
+    <data>
+      <file>data/meshes/mannequin/torso_bottom.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>torso_top.obj</name>
+    <data>
+      <file>data/meshes/mannequin/torso_top.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>torso_top_joint.obj</name>
+    <data>
+      <file>data/meshes/mannequin/torso_top_joint.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>torso_middle.obj</name>
+    <data>
+      <file>data/meshes/mannequin/torso_middle.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>knee.obj</name>
+    <data>
+      <file>data/meshes/mannequin/knee.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>neck.obj</name>
+    <data>
+      <file>data/meshes/mannequin/neck.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>forearm.obj</name>
+    <data>
+      <file>data/meshes/mannequin/forearm.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>leg.obj</name>
+    <data>
+      <file>data/meshes/mannequin/leg.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>shoulder.obj</name>
+    <data>
+      <file>data/meshes/mannequin/shoulder.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>leg_top_joint.obj</name>
+    <data>
+      <file>data/meshes/mannequin/leg_top_joint.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>foreleg.obj</name>
+    <data>
+      <file>data/meshes/mannequin/foreleg.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>foot.obj</name>
+    <data>
+      <file>data/meshes/mannequin/foot.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>torso_bottom_joint.obj</name>
+    <data>
+      <file>data/meshes/mannequin/torso_bottom_joint.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>hand.obj</name>
+    <data>
+      <file>data/meshes/mannequin/hand.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>ankle.obj</name>
+    <data>
+      <file>data/meshes/mannequin/ankle.obj</file>
+    </data>
+  </mesh>
+  <mesh>
+    <name>arm.obj</name>
+    <data>
+      <file>data/meshes/mannequin/arm.obj</file>
+    </data>
+  </mesh>
+  <material>
+    <name>Ambient</name>
+    <data>
+      <type>Ambient</type>
+      <diffuse>
+        <color>255 255 255 255 </color>
+      </diffuse>
+      <normal>
+        <color>128 128 255 255 </color>
+      </normal>
+      <specular>
+        <color>255 255 255 255 </color>
+      </specular>
+      <shininess>50.0</shininess>
+      <roughness>0.3</roughness>
+      <dispMagnitude>0.3</dispMagnitude>
+    </data>
+  </material>
+  <material>
+    <name>PhongMaterial</name>
+    <data>
+      <type>Phong</type>
+      <diffuse>
+        <color>184 119 64 255 </color>
+      </diffuse>
+      <normal>
+        <color>128 128 255 255 </color>
+      </normal>
+      <specular>
+        <color>255 255 255 255 </color>
+      </specular>
+      <shininess>50.0</shininess>
+      <roughness>0.3</roughness>
+      <dispMagnitude>0.3</dispMagnitude>
+    </data>
+  </material>
+  <object>
+    <name>ForearmRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.1984956 -0.98010176 0.0 0.0 0.98010176 0.1984956 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>ElbowRight</parent>
+      <mesh>forearm.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ArmLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>ShoulderLeft</parent>
+      <mesh>arm.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>AnkleLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -3.10722 0.0 1.0</matrix>
+      <parent>ForelegLeft</parent>
+      <mesh>ankle.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>TorsoTop</name>
+    <data>
+      <matrix>0.96418804 0.0 -0.26521957 0.0 0.0 1.0 0.0 0.0 0.26521957 0.0 0.96418804 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>TorsoTopJoint</parent>
+      <mesh>torso_top.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>KneeRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -3.47239 0.0 1.0</matrix>
+      <parent>LegRight</parent>
+      <mesh>knee.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>TorsoTopJoint</name>
+    <data>
+      <matrix>0.9974607 0.0 0.07121891 0.0 0.0 1.0 0.0 0.0 -0.07121891 0.0 0.9974607 0.0 0.0 0.93821 0.04631 1.0</matrix>
+      <parent>TorsoMiddle</parent>
+      <mesh>torso_top_joint.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>TopLegLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.99347466 -0.11405288 0.0 0.0 0.11405288 0.99347466 0.0 0.55682 -1.73566 0.0 1.0</matrix>
+      <parent>TorsoBottom</parent>
+      <mesh>leg_top_joint.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ElbowRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -2.51908 0.0 1.0</matrix>
+      <parent>ArmRight</parent>
+      <mesh>elbow.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>Light0</name>
+    <data type="cs4620.common.SceneLight">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>LightObj0</parent>
+      <intensity>1.0 1.0 1.0</intensity>
+      <isAmbient>false</isAmbient>
+    </data>
+  </object>
+  <object>
+    <name>Light1</name>
+    <data type="cs4620.common.SceneLight">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>LightObj1</parent>
+      <intensity>1.0 1.0 1.0</intensity>
+      <isAmbient>false</isAmbient>
+    </data>
+  </object>
+  <object>
+    <name>Light2</name>
+    <data type="cs4620.common.SceneLight">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>LightObj2</parent>
+      <intensity>1.0 1.0 1.0</intensity>
+      <isAmbient>false</isAmbient>
+    </data>
+  </object>
+  <object>
+    <name>TorsoBottomJoint</name>
+    <data>
+      <matrix>0.99937487 0.0 -0.035353 0.0 0.0 1.0 0.0 0.0 0.035353 0.0 0.99937487 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>TorsoMiddle</parent>
+      <mesh>torso_bottom_joint.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>HandRight</name>
+    <data>
+      <matrix>0.08656462 0.0 -0.9962462 0.0 0.0 1.0 0.0 0.0 0.9962462 0.0 0.08656462 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>WristRight</parent>
+      <mesh>hand.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>Light3</name>
+    <data type="cs4620.common.SceneLight">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>LightObj3</parent>
+      <intensity>1.0 1.0 1.0</intensity>
+      <isAmbient>false</isAmbient>
+    </data>
+  </object>
+  <object>
+    <name>TorsoBottom</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>TorsoBottomJoint</parent>
+      <mesh>torso_bottom.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LegLeft</name>
+    <data>
+      <matrix>0.9458647 0.32456133 0.0 0.0 -0.30083245 0.8767119 -0.3753347 0.0 -0.12181913 0.35501584 0.92688936 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>TopLegLeft</parent>
+      <mesh>leg.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>Neck</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 2.17722 0.04631 1.0</matrix>
+      <parent>TorsoTop</parent>
+      <mesh>neck.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>Camera</name>
+    <data type="cs4620.common.SceneCamera">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 30.0 1.0</matrix>
+      <parent>World</parent>
+      <zPlanes>0.02 1000.0</zPlanes>
+      <perspective>0.01 0.01</perspective>
+      <exposure>2.0</exposure>
+    </data>
+  </object>
+  <object>
+    <name>HandLeft</name>
+    <data>
+      <matrix>0.5890694 0.0 -0.8080824 0.0 0.0 1.0 0.0 0.0 0.8080824 0.0 0.5890694 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>WristLeft</parent>
+      <mesh>hand.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LightObj0</name>
+    <data>
+      <matrix>0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.0 2.0 2.0 2.0 1.0</matrix>
+      <parent>World</parent>
+      <mesh>Sphere</mesh>
+      <material>Ambient</material>
+    </data>
+  </object>
+  <object>
+    <name>Head</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>Neck</parent>
+      <mesh>head.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ForelegLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.87449276 0.48503855 0.0 0.0 -0.48503855 0.87449276 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>KneeLeft</parent>
+      <mesh>foreleg.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>FootLeft</name>
+    <data>
+      <matrix>0.9108638 -0.41270703 0.0 0.0 0.41270703 0.9108638 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>AnkleLeft</parent>
+      <mesh>foot.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ElbowLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.7648422 -0.6442178 0.0 0.0 0.6442178 0.7648422 0.0 0.0 -2.51908 0.0 1.0</matrix>
+      <parent>ArmLeft</parent>
+      <mesh>elbow.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ArmRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.79168224 -0.61093307 0.0 0.0 0.61093307 0.79168224 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>ShoulderRight</parent>
+      <mesh>arm.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LegRight</name>
+    <data>
+      <matrix>0.889799 -0.45635265 0.0 0.0 0.45635265 0.889799 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>TopLegRight</parent>
+      <mesh>leg.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>WristLeft</name>
+    <data>
+      <matrix>0.062982164 0.0 -0.9980146 0.0 0.0 1.0 0.0 0.0 0.9980146 0.0 0.062982164 0.0 0.0 -2.19313 0.0 1.0</matrix>
+      <parent>ForearmLeft</parent>
+      <mesh>wrist.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>WristRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -2.19313 0.0 1.0</matrix>
+      <parent>ForearmRight</parent>
+      <mesh>wrist.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ShoulderLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 1.36454 1.58087 0.0 1.0</matrix>
+      <parent>TorsoTop</parent>
+      <mesh>shoulder.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ForelegRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.9465705 0.32249698 0.0 0.0 -0.32249698 0.9465705 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>KneeRight</parent>
+      <mesh>foreleg.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>KneeLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 -3.47238 0.0 1.0</matrix>
+      <parent>LegLeft</parent>
+      <mesh>knee.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>TorsoMiddle</name>
+    <data>
+      <matrix>0.8019738 0.0 -0.5973592 0.0 0.0 1.0 0.0 0.0 0.5973592 0.0 0.8019738 0.0 0.0 1.15969 0.0 1.0</matrix>
+      <parent>World</parent>
+      <mesh>torso_middle.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>TopLegRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.99347466 -0.11405288 0.0 0.0 0.11405288 0.99347466 0.0 -0.55682 -1.73566 0.0 1.0</matrix>
+      <parent>TorsoBottom</parent>
+      <mesh>leg_top_joint.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ShoulderRight</name>
+    <data>
+      <matrix>0.81672215 0.0 0.57703114 0.0 0.0 1.0 0.0 0.0 -0.57703114 0.0 0.81672215 0.0 -1.36454 1.58087 0.04631 1.0</matrix>
+      <parent>TorsoTop</parent>
+      <mesh>shoulder.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LightObj3</name>
+    <data>
+      <matrix>0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.0 2.0 -6.0 -2.0 1.0</matrix>
+      <parent>World</parent>
+      <mesh>Sphere</mesh>
+      <material>Ambient</material>
+    </data>
+  </object>
+  <object>
+    <name>FootRight</name>
+    <data>
+      <matrix>0.8816908 0.47182766 0.0 0.0 -0.46430495 0.86763334 -0.17785767 0.0 -0.08391817 0.15681547 0.98405623 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>AnkleRight</parent>
+      <mesh>foot.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>ForearmLeft</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>ElbowLeft</parent>
+      <mesh>forearm.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LightObj1</name>
+    <data>
+      <matrix>0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.0 -2.0 -2.0 2.0 1.0</matrix>
+      <parent>World</parent>
+      <mesh>Sphere</mesh>
+      <material>Ambient</material>
+    </data>
+  </object>
+  <object>
+    <name>AmbientLight</name>
+    <data type="cs4620.common.SceneLight">
+      <matrix>1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 1.0</matrix>
+      <parent>World</parent>
+      <intensity>0.05 0.05 0.05</intensity>
+      <isAmbient>true</isAmbient>
+    </data>
+  </object>
+  <object>
+    <name>AnkleRight</name>
+    <data>
+      <matrix>1.0 0.0 0.0 0.0 0.0 0.99347466 -0.11405288 0.0 0.0 0.11405288 0.99347466 0.0 0.0 -3.10721 0.0 1.0</matrix>
+      <parent>ForelegRight</parent>
+      <mesh>ankle.obj</mesh>
+      <material>PhongMaterial</material>
+    </data>
+  </object>
+  <object>
+    <name>LightObj2</name>
+    <data>
+      <matrix>0.1 0.0 0.0 0.0 0.0 0.1 0.0 0.0 0.0 0.0 0.1 0.0 -2.0 6.0 2.0 1.0</matrix>
+      <parent>World</parent>
+      <mesh>Sphere</mesh>
+      <material>Ambient</material>
+    </data>
+  </object>
+</scene>
